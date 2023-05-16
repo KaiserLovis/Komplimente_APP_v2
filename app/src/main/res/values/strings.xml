@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Komplimente_APP</string>
+    <string name="compliment_text">Du siehst heute großartig aus!</string>
+    <string name="button_text">Ein neues Kompliment, bitte!</string>
+    <string name="blabla">blabla</string>
+</resources>
