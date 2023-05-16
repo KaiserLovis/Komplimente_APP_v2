@@ -9,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
-    private val nouns = arrayOf("nose", "head", "hand", "heart", "smile", "mind", "soul", "voice")
-    private val particles = arrayOf("very", "absolutely", "truly", "completely", "totally", "definitely", "utterly", "remarkably", "incredibly", "positively")
-    private val adjectives = arrayOf("nice", "pretty", "amazing", "wonderful", "awesome", "fantastic", "excellent", "brilliant", "outstanding", "exceptional", "marvelous", "fabulous")
+    private val nouns = arrayOf("nose", "head", "hand", "heart", "smile", "mind", "soul", "voice", "eye", "left middle finger", "hair")
+    private val particles = arrayOf("very", "absolutely", "truly", "completely", "totally", "definitely", "utterly", "remarkably", "incredibly", "positively", "unbelievably", "")
+    private val adjectives = arrayOf("nice", "pretty", "amazing", "wonderful", "awesome", "fantastic", "excellent", "brilliant", "outstanding", "exceptional", "marvelous", "fabulous", "cheerful", "impressive", "epic", "inspiring")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
