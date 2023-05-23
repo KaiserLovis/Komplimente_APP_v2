@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrunddrei"
+    >
 
     <TextView
         android:id="@+id/complimentTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/compliment_text"/>
+        android:layout_width="421dp"
+        android:layout_height="173dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/compliment_text"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        android:typeface="normal" />
 
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/push_me_png"
-        android:contentDescription="@string/blabla" />
-
-
+        android:layout_weight="4"
+        android:background="@drawable/hintergrundzwei"
+        android:contentDescription="@string/blabla"
+        app:srcCompat="@drawable/push_me_png" />
 
 
 </LinearLayout>
