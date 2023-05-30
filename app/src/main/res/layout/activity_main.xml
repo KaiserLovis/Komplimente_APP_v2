@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hintergrunddrei"
-    >
+    android:background="@drawable/hintergrunddrei">
 
-    <TextView
-        android:id="@+id/complimentTextView"
-        android:layout_width="421dp"
-        android:layout_height="173dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/compliment_text"
-        android:textColor="#FFEB3B"
-        android:textSize="48sp"
-        android:typeface="normal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
+        <TextView
+            android:id="@+id/complimentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/compliment_text"
+            android:textColor="#FFEB3B"
+            android:textSize="48sp"
+            android:typeface="normal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:background="@drawable/hintergrundzwei"
-        android:contentDescription="@string/blabla"
-        app:srcCompat="@drawable/push_me_png" />
+        <ImageView
+            android:id="@+id/flyingImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="32dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/einhorn"
+            android:visibility="invisible" />
 
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hintergrundzwei"
+            android:contentDescription="@string/blabla"
+            app:srcCompat="@drawable/push_me_png" />
 
-</LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
