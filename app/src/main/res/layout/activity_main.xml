@@ -1,38 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hintergrunddrei">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="0dp"
+        android:layout_weight="3">
 
         <TextView
             android:id="@+id/complimentTextView"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/compliment_text"
-            android:textColor="#FFEB3B"
-            android:textSize="48sp"
-            android:typeface="normal"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
-            android:gravity="center" />
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/compliment_text"
+            android:textColor="#FFEB3B"
+            android:textSize="34sp"
+            android:typeface="normal" />
 
         <ImageView
             android:id="@+id/flyingImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="32dp"
-            android:layout_centerHorizontal="true"
             android:src="@drawable/einhorn"
             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/flyingImageDino"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/dino"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -44,4 +61,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

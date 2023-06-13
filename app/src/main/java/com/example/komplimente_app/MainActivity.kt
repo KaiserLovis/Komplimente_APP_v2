@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val generateButton: ImageButton = findViewById(R.id.imageButton)
         val complimentTextView: TextView = findViewById(R.id.complimentTextView)
         val flyingImage: ImageView = findViewById(R.id.flyingImage)
+        val flyingImageDino: ImageView = findViewById(R.id.flyingImageDino)
 
         complimentTextView.text = ""
         generateButton.setOnClickListener {
@@ -30,8 +31,13 @@ class MainActivity : AppCompatActivity() {
             complimentTextView.text = compliment
 
             buttonClickCount++
-            if (buttonClickCount >= 10) {
+            if (buttonClickCount == 7) {
+                complimentTextView.visibility=android.view.View.GONE
                 animateFlyingImage(flyingImage)
+                complimentTextView.visibility=android.view.View.VISIBLE
+            }
+            if (buttonClickCount >= 12) {
+                animateFlyingImage(flyingImageDino)
                 buttonClickCount = 0
             }
         }
